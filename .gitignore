@@ -1,17 +1,19 @@
-Ultrapowa Clash Server/obj/
+Ultrapowa Royale Server/obj/
 packages/
 ucspackages/
-.vs/Ultrapowa Clash Server/v14/.suo
+.vs/Ultrapowa Royale Server/v14/.suo
 *.scgdat
 *.log
 *.pdb
-Ultrapowa Clash Server/bin/Debug/ucs.exe.manifest
+Ultrapowa Royale Server/bin/Debug/Ultrapowa Royale Server.exe.manifest
 *.manifest
-Ultrapowa Clash Server/bin/Debug/ucs.vshost.application
+Ultrapowa Royale Server/bin/Debug/Ultrapowa Royale Server.vshost.application
+Ultrapowa Royale Server/bin/Debug/Ultrapowa Royale Server.application
 *.application
-Ultrapowa Clash Server/bin/Debug/ucs.vshost.exe.manifest
+Ultrapowa Royale Server/bin/Debug/Ultrapowa Royale Server.vshost.exe.manifest
+Ultrapowa Royale Server/bin/Debug/Ultrapowa Royale Server.exe.manifest
 *.vshost
-Ultrapowa Clash Server/bin/Release/
-Ultrapowa Clash Server/bin/Debug/logs/*
-Ultrapowa Clash Server/bin/Debug/patch/*
+Ultrapowa Royale Server/bin/Release/
+Ultrapowa Royale Server/bin/Debug/logs/*
+Ultrapowa Royale Server/bin/Debug/patch/*
 *.cache

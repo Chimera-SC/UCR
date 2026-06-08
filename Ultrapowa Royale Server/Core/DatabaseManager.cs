@@ -211,10 +211,11 @@ namespace UCS.Core
         /// <returns>An int64 (ID) .</returns>
         public long GetMaxAllianceId()
         {
-            long max = 0;
             using (var db = new ucrdbEntities(m_vConnectionString))
-                max = (from alliance in db.clan select (long?)alliance.ClanId ?? 0).DefaultIfEmpty().Max();
-            return max;
+            {
+                var max = db.clan.Select(alliance => (long?)alliance.ClanId).DefaultIfEmpty().Max();
+                return max ?? 0;
+            }
         }
 
         /// <summary>
@@ -240,10 +241,11 @@ namespace UCS.Core
         /// <returns>An int64 long ID.</returns>
         public long GetMaxPlayerId()
         {
-            long max = 0;
             using (var db = new ucrdbEntities(m_vConnectionString))
-                max = (from ep in db.player select (long?)ep.PlayerId ?? 0).DefaultIfEmpty().Max();
-            return max;
+            {
+                var max = db.player.Select(ep => (long?)ep.PlayerId).DefaultIfEmpty().Max();
+                return max ?? 0;
+            }
         }
 
         /// <summary>

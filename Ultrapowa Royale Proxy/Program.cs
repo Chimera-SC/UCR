@@ -10,7 +10,7 @@ namespace UCP
 
         private static void Main()
         {
-            Console.Title = "Ultrapowa Clash Proxy v" + Assembly.GetExecutingAssembly().GetName().Version;
+            Console.Title = "Ultrapowa Royale Proxy v" + Assembly.GetExecutingAssembly().GetName().Version;
 
             Console.WriteLine(
                 @"
