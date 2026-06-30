@@ -22,6 +22,17 @@ namespace UCS.Helpers
             }
         }
 
+        public static void AddHexa(this List<byte> list, string data)
+        {
+            list.AddRange(data.HexaToBytes());
+        }
+
+        public static byte[] HexaToBytes(this string data)
+        {
+            string tmp = data.Replace("-", string.Empty);
+            return Enumerable.Range(0, tmp.Length).Where(x => x % 2 == 0).Select(x => Convert.ToByte(tmp.Substring(x, 2), 16)).ToArray();
+        }
+
         public static void AddInt32(this List<byte> list, int data)
         {
             list.AddRange(BitConverter.GetBytes(data).Reverse());
