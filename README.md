@@ -1,5 +1,3 @@
-# UCR
-### This server is not ready for production because OHD is incomplete.
 ##### This repository is a clone of the development build of Ultrapowa Royale Server, a C# server emulator for the game Clash Royale. 
 
 ##### UCR is NOT affiliated with Supercell, or any other company.
